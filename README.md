@@ -1,4 +1,5 @@
 # Animated-Buttons-Collection
+
  This project is a collection of **modern animated buttons** built using pure HTML and CSS.
  ---
 
@@ -23,7 +24,9 @@ The goal of this project is to:
 - Easy to customize colors and styles
 
 ---
-
+## Live Demo
+* Demo: https://rafiullah-najat.github.io/Animated-Buttons-Collection/
+---
 
 ## 🛠️ Technologies Used
 
@@ -34,6 +37,7 @@ The goal of this project is to:
 ## 📌 Author
 
 Created by Rafiullah Najat
+---
 
 ## ⭐ Support
 
