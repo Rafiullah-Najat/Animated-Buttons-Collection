@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  min-height: 100dvh;
+  font-family: sans-serif;
+}
+
+.btn1,
+.btn2 {
+  display: inline-block;
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition:
+    color 1s,
+    box-shadow 0s;
+}
+
+.btn1 {
+  color: #0ef;
+}
+
+.btn2 {
+  color: rgb(1, 255, 22);
+}
+
+.btn1:hover,
+.btn2:hover {
+  transition-delay: 0s, 1s;
+  color: #fff;
+}
+
+.btn1:hover {
+  box-shadow:
+    0 0 10px #0ef,
+    0 0 20px #0ef,
+    0 0 40px #0ef,
+    0 0 80px #0ef,
+    0 0 160px #0ef;
+}
+
+
+.btn2:hover {
+  box-shadow:
+    0 0 10px rgb(1, 255, 22),
+    0 0 20px rgb(1, 255, 22),
+    0 0 40px rgb(1, 255, 22),
+    0 0 80px rgb(1, 255, 22),
+    0 0 160px rgb(1, 255, 22);
+}
+
+.btn1::after,
+.btn2::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  z-index: -1;
+  transition: 1s;
+}
+
+.btn1::after {
+  background-color: #0ef;
+}
+
+.btn2::after {
+  background-color: rgb(1, 255, 22);
+}
+
+.btn1:hover::after,
+.btn2:hover::after {
+  width: calc(100% + 10px);
+  transform: translateX(-50%) scale(1) rotate(360deg);
+}
